@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+/* header section start  */
+.header{
+    width:100%;
+    height: auto;
+    padding: 30px 0px 280px 0px;
+    background-image: url(../images/photo-1471879832106-c7ab9e0cee23.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+}
+.header .main{
+    width: 920px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 0px;
+}
+.header .main .logo{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 5px;
+}
+.header .main .logo img{
+    width: 130px;
+    height: auto;
+}
+.header .main .menu{
+    display: inline-block;
+    width: 70%;
+    height: auto;
+}
+.header .main .menu ul li{
+    display: inline-block;
+    list-style: none;
+    transition: all .5s;
+}
+.header .main .menu ul li:hover a{
+    color: #ef664d;
+}
+.header .main .menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.header h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    margin-top: 150px;
+    font-size: 45px;
+    font-style: italic;
+    position: relative;
+}
+.header h1::before{
+    font: var(--fa-font-solid);
+    content: "\f10d";
+    color: tomato;
+    position: absolute;
+    top: -20px;
+    left: 26%;
+}
+.header h1::after{
+    font: var(--fa-font-solid);
+    content: "\f10e";
+    color: tomato;
+    position: absolute;
+    top: -20px;
+    right: 26%;
+}
+/* header seection end  */
+/* about section start  */
+.about{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.about h1{
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+.about .about-main{
+    width: 920px;
+    display: flex;
+    text-align: center;
+    margin: 30px auto;
+}
+.about .about-main .left{
+    width: 30%;
+    height: auto;
+}
+.about .about-main .left img{
+    width: 200px;
+    height: auto;
+    margin: 20px 0px;
+    border: 1px solid red;
+    box-shadow: 3px 3px 20px black;
+}
+.about .about-main .right{
+    width: 70%;
+    height: auto;
+    text-align: left;
+    margin-left: 85px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+}
+/* about section end  */
+/* service section start  */
+.service{
+    width: 100%;
+    height: 350px;
+    background-color: #2e3e4e;
+    text-align: center;
+    padding: 40px 0px;
+}
+.service h1{
+    color: #de574d;
+}
+.service .service-main{
+    width: 920px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.service .service-main .one{
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+.service .service-main i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ef664d;
+    border-radius: 5px 20px 5px 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.service .service-main .frist, .second, .third{
+    width: 33.33%;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+}
+.service .service-main p::before{
+    font: var(--fa-font-solid);
+    content: "\f560";
+    color: tomato;
+    padding: 0px 10px;
+}
+.service .service-main .rtl, .btt, .ltr{
+    width: 90px;
+    height: auto;
+    padding: 3px 0px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #ef664d;
+    display: block;
+    box-shadow: 2px 2px 5px black;
+    margin: 15px 0px 15px 115px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.service .service-main .rtl::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .4s;
+}
+.service .service-main .btt::before{
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .4s;
+}
+.service .service-main .ltr::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .4s;
+}
+.service .service-main .rtl:hover{
+    color: rgb(44, 178, 32);
+}
+.service .service-main .btt:hover{
+    color: rgb(44, 178, 32);
+}
+.service .service-main .ltr:hover{
+    color: rgb(44, 178, 32);
+}
+.service .service-main .rtl:hover::before{
+    width: 100%;
+}
+.service .service-main .btt:hover::before{
+    height: 100%;
+}
+.service .service-main .ltr:hover::before{
+    width: 100%;
+}
+
+
+/* service section end */
+/* contact section start  */
+.content{
+    text-align: center;
+    width: 920px;
+    height: 280px;
+    padding: 40px 0px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.content h1{
+    margin-bottom: 30px;
+}
+.content input{
+    border: none;
+    border-bottom: 2px solid #f3907e;
+    width: 350px;
+    height: auto;
+}
+.content button{
+    width: 170px;
+    height: auto;
+    background-color: #531207;
+    color: #fff;
+    border: none;
+    padding: 5px 0;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    z-index: 1;
+}
+.content button::before{
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #f3907e ;
+    z-index: -1;
+    transition: .4s;
+}
+.content button::after{
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(146, 69, 7);
+    z-index: -1;
+    transition: .4s;
+}
+.content button:hover::before{
+    width: 100%;
+}
+.content button:hover::after{
+    width: 0%;
+}
+/* contact section end */
+
+/* footer section  */
+footer{
+    text-align: center;
+    background-color: #2e3e4e;
+    color: #fff;
+    padding: 30px 0px;
+}
+footer p span{
+    color: #d2534e;
+}
+/* footer section  */
